@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Open sans;
+}
+.navibar{
+	width: 88%;
+	margin: auto;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 240px;
+	cursor: pointer;
+}	
+.navibar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 15px;
+}
+.navibar ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 20px;
+}
+.content{
+	position: absolute;
+	top: 20%;
+	text-align: center;
+	margin-left:20%;
+}
+.centered h1{
+	font-family: times roman;
+	font-size: 80px;
+	color: #000000;
+	line-height: 100px;
+}
+.content2{
+	position: absolute;
+	top: 20%;
+	text-align: center;
+}
+.centered h2{
+	font-family: times roman;
+	font-size: 90px;
+	color: #2f4f4f;
+	line-height: 50px;
+}
+.centered p{
+	font-family: times roman;
+	font-size: 20px;
+	color: #000000;
+	line-height: 50px;
+}
+.btn{
+	border: 1px solid #3498db;
+	background: none;
+	padding : 10px 20px;
+	font-size: 35px;
+	font-family: "montserrat";
+	cursor:pointer;
+	margin:15px;
+	position: relative;
+	overflow: hidden;
+}
+.btn1,.btn2,.btn3{
+	color: #3498db;
+}
+.btn1:hover,.btn2:hover,.btn3:hover{
+	color: #fff;
+}
+.btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width:100%;
+	height: 0%;
+	background: #3498db;
+	z-index: -1;
+	transition: 0.8s;
+}	
+.btn1::before,.btn2::before,.btn3::before{
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before,.btn2:hover::before,.btn3:hover::before{
+	height: 180%;
+}
